@@ -32,7 +32,10 @@ class HeroSection extends StatelessWidget {
 //          const SizedBox(height: 20),
           ElevatedButton(
             onPressed: () async {
-              final Uri url = Uri.parse('https://play.google.com/apps/internaltest/4699728455868082043');
+              // Nouveau url pour le Play Store
+              // car l'ancien marchait pas 
+              
+              final Uri url = Uri.parse('https://play.google.com/store/apps/details?id=fr.coding.caddiescan&pli=1');
 
               if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
                 throw Exception('Impossible d\'ouvrir le lien $url');
