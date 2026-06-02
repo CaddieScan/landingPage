@@ -46,7 +46,7 @@ class ScreenshotsSection extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(24),
         child: Image.asset(
-          'screenshots/$imageName',
+          'assets/screenshots/$imageName',
           fit: BoxFit.cover,
           errorBuilder: (context, error, stackTrace) {
             return Container(
